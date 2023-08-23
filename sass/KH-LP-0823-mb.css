@@ -302,15 +302,26 @@ main {
   text-align: center;
 }
 
+.fixed-top {
+  padding-top: calc(0.5rem * var(--ratio));
+  padding-bottom: calc(0.5rem * var(--ratio));
+  padding-left: calc(1rem * var(--ratio));
+  padding-right: calc(1rem * var(--ratio));
+}
+
 /*=Header=*/
 .header {
   position: relative;
   overflow: hidden;
-  max-width: 768px;
-  height: calc(var(--ratio) * 1051px);
-  background: url(../images/page1/Page-1-BG.jpg) no-repeat top center;
-  background-size: cover;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: calc(113px * var(--ratio)) auto 0;
+}
+.header .BG {
+  max-width: 768px;
+  width: 100%;
 }
 .header .btn-trailer {
   width: 29%;
@@ -321,59 +332,66 @@ main {
   left: 82.3%;
   transform: translateX(-50%);
 }
+.header .logo {
+  position: absolute;
+  top: calc(29px * var(--ratio));
+  left: calc(25px * var(--ratio));
+}
 .header .logo img {
-  width: calc(304px * var(--ratio));
-  position: relative;
-  top: calc(135px * var(--ratio));
+  width: calc(243px * var(--ratio));
 }
 
 .page2 {
   position: relative;
   overflow: hidden;
-  max-width: 768px;
-  height: calc(1051px * var(--ratio));
-  background: url(../images/page2/Page-2-BG.jpg) no-repeat top center;
-  background-size: cover;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: 0 auto;
+}
+.page2 .BG {
+  max-width: 768px;
+  width: 100%;
 }
 .page2 .container {
   height: 100%;
 }
 .page2 .btn-ahy {
-  background: url(../images/page2/Page-2-Btn-AYH.png) no-repeat top center;
+  background: url(../images/page2/Page-2-Btn-AYH-new.png) no-repeat top center;
   background-size: contain;
-  width: calc(262px * var(--ratio));
-  height: calc(213px * var(--ratio));
+  width: calc(310px * var(--ratio));
+  height: calc(310px * var(--ratio));
   position: absolute;
-  top: 62%;
-  left: 54%;
+  top: 60.1%;
+  left: 47.4%;
 }
 .page2 .btn-hs {
-  background: url(../images/page2/Page-2-Btn-HSLK.png) no-repeat top center;
+  background: url(../images/page2/Page-2-Btn-HSLK-new.png) no-repeat top center;
   background-size: contain;
-  width: calc(262px * var(--ratio));
-  height: calc(213px * var(--ratio));
+  width: calc(310px * var(--ratio));
+  height: calc(310px * var(--ratio));
   position: absolute;
-  top: 40%;
-  left: 44.8%;
+  top: 34.2%;
+  left: 43.1%;
 }
 .page2 .btn-tkc {
-  background: url(../images/page2/page-2-Btn-TKC.png) no-repeat top center;
+  background: url(../images/page2/page-2-Btn-TKC-new.png) no-repeat top center;
   background-size: contain;
-  width: calc(262px * var(--ratio));
-  height: calc(213px * var(--ratio));
+  width: calc(310px * var(--ratio));
+  height: calc(310px * var(--ratio));
   position: absolute;
-  top: 26.6%;
-  left: 15%;
+  top: 20.5%;
+  left: 14.7%;
 }
 .page2 .btn-tht {
-  background: url(../images/page2/Page-2-Btn-THT.png) no-repeat top center;
+  background: url(../images/page2/Page-2-Btn-THT-new.png) no-repeat top center;
   background-size: contain;
-  width: calc(262px * var(--ratio));
-  height: calc(213px * var(--ratio));
+  width: calc(310px * var(--ratio));
+  height: calc(310px * var(--ratio));
   position: absolute;
-  top: 57.6%;
-  left: 9%;
+  top: 53.1%;
+  left: 8.2%;
 }
 
 .page3 {
@@ -381,7 +399,7 @@ main {
   overflow: hidden;
   max-width: 768px;
   height: calc(850px * var(--ratio));
-  background: url(../images/page3/Page-3-BG-UseThenDelete.jpg) no-repeat top center;
+  background: url(../images/page3/page-3-BG.jpg) no-repeat top center;
   background-size: cover;
   margin: 0 auto;
 }
@@ -570,7 +588,7 @@ main {
   overflow-y: scroll;
   width: calc(450px * var(--ratio));
   height: calc(496px * var(--ratio));
-  font-size: calc(14px * var(--ratio));
+  font-size: calc(24px * var(--ratio));
   margin: auto;
 }
 .modal-popup .modal-content-ahy .modal-body .content-anhhungyen p {
@@ -601,7 +619,7 @@ main {
   overflow-y: scroll;
   width: calc(450px * var(--ratio));
   height: calc(496px * var(--ratio));
-  font-size: calc(14px * var(--ratio));
+  font-size: calc(24px * var(--ratio));
   margin: auto;
 }
 .modal-popup .modal-content-hs .modal-body .content-hoasonluankiem p {
@@ -632,7 +650,7 @@ main {
   overflow-y: scroll;
   width: calc(450px * var(--ratio));
   height: calc(496px * var(--ratio));
-  font-size: calc(14px * var(--ratio));
+  font-size: calc(24px * var(--ratio));
   margin: auto;
 }
 .modal-popup .modal-content-tht .modal-body .content-tuhientrang p {
@@ -663,7 +681,7 @@ main {
   overflow-y: scroll;
   width: calc(450px * var(--ratio));
   height: calc(496px * var(--ratio));
-  font-size: calc(14px * var(--ratio));
+  font-size: calc(24px * var(--ratio));
   margin: auto;
 }
 .modal-popup .modal-content-tkc .modal-body .content-tangkinhcac p {

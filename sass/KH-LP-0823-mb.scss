@@ -38,6 +38,7 @@ main {position: relative;}
   background-image: url(../images/Header/Header-BG.jpg);
   z-index: 1051;
 
+
   .container
   {
     display: flex;
@@ -135,16 +136,33 @@ main {position: relative;}
     }
   }
 }
+
+.fixed-top
+{
+  padding-top: calc(0.5rem * var(--ratio));
+  padding-bottom: calc(0.5rem * var(--ratio));
+  padding-left: calc(1rem * var(--ratio));
+  padding-right: calc(1rem * var(--ratio));
+}
+
 /*=Header=*/
 .header
 {
   position: relative;
   overflow: hidden;
-  max-width: 768px;
-  height: calc(var(--ratio) * 1051px);
-  background: url(../images/page1/Page-1-BG.jpg) no-repeat top center;
-  background-size: cover;
+  width: fit-content;
+  height: fit-content;
+  // background: url(../images/page1/Page-1-BG.jpg) no-repeat top center;
+  // background-size: contain;
   margin:calc(113px * var(--ratio)) auto 0;
+
+  .BG
+  {
+    
+    max-width: 768px;
+    // height: calc(var(--ratio) * 1051px);
+    width: 100%
+  }
 
   .btn-trailer
   {
@@ -158,11 +176,12 @@ main {position: relative;}
   }
   .logo
   {
+    position: absolute;
+    top: calc(29px * var(--ratio));
+    left: calc(25px * var(--ratio));
     img
     {
-      width: calc(304px * var(--ratio));
-      position: relative;
-      top: calc(135px * var(--ratio));
+      width: calc(243px * var(--ratio));
     }
   }
 }
@@ -171,11 +190,16 @@ main {position: relative;}
 {
   position: relative;
   overflow: hidden;
-  max-width: 768px;
-  height: calc(1051px * var(--ratio));
-  background: url(../images/page2/Page-2-BG.jpg) no-repeat top center;
-  background-size: cover;
+  width: fit-content;
+  height: fit-content;
+  // background: url(../images/page2/Page-2-BG.jpg) no-repeat top center;
   margin: 0 auto;
+
+  .BG
+  {
+    max-width: 768px;
+    width: 100%;
+  }
 
   .container
   {
@@ -183,46 +207,46 @@ main {position: relative;}
   }
   .btn-ahy
     {
-      background: url(../images/page2/Page-2-Btn-AYH.png) no-repeat top center;
+      background: url(../images/page2/Page-2-Btn-AYH-new.png) no-repeat top center;
       background-size: contain;
-      width: calc(262px * var(--ratio));
-      height: calc(213px * var(--ratio));
+      width: calc(310px * var(--ratio));
+      height: calc(310px * var(--ratio));
       position: absolute;
-      top: 62%;
-      left: 54%;
+      top: 60.1%;
+      left: 47.4%;
     }
 
     .btn-hs
     {
-      background: url(../images/page2/Page-2-Btn-HSLK.png) no-repeat top center;
+      background: url(../images/page2/Page-2-Btn-HSLK-new.png) no-repeat top center;
       background-size: contain;
-      width: calc(262px * var(--ratio));
-      height: calc(213px * var(--ratio));
+      width: calc(310px * var(--ratio));
+      height: calc(310px * var(--ratio));
       position: absolute;
-      top: 40%;
-      left: 44.8%;
+      top: 34.2%;
+      left: 43.1%;
     }
 
     .btn-tkc
     {
-      background: url(../images/page2/page-2-Btn-TKC.png) no-repeat top center;
+      background: url(../images/page2/page-2-Btn-TKC-new.png) no-repeat top center;
       background-size: contain;
-      width: calc(262px * var(--ratio));
-      height: calc(213px * var(--ratio));
+      width: calc(310px * var(--ratio));
+      height: calc(310px * var(--ratio));
       position: absolute;
-      top: 26.6%;
-      left: 15%;
+      top: 20.5%;
+      left: 14.7%;
     }
 
     .btn-tht
     {
-      background: url(../images/page2/Page-2-Btn-THT.png) no-repeat top center;
+      background: url(../images/page2/Page-2-Btn-THT-new.png) no-repeat top center;
       background-size: contain;
-      width: calc(262px * var(--ratio));
-      height: calc(213px * var(--ratio));
+      width: calc(310px * var(--ratio));
+      height: calc(310px * var(--ratio));
       position: absolute;
-      top: 57.6%;
-      left: 9%;
+      top: 53.1%;
+      left: 8.2%;
     }
   
 }
@@ -233,7 +257,7 @@ main {position: relative;}
   overflow: hidden;
   max-width:768px;
   height:calc(850px * var(--ratio));
-  background: url(../images/page3/Page-3-BG-UseThenDelete.jpg) no-repeat top center;
+  background: url(../images/page3/page-3-BG.jpg) no-repeat top center;
   background-size: cover;
   margin: 0 auto;
 
@@ -489,7 +513,7 @@ main {position: relative;}
         overflow-y: scroll;
         width: calc(450px * var(--ratio));
         height: calc(496px * var(--ratio));
-        font-size: calc(14px * var(--ratio));
+        font-size: calc(24px * var(--ratio));
         margin: auto;
         p
         {
@@ -529,7 +553,7 @@ main {position: relative;}
         overflow-y: scroll;
         width: calc(450px * var(--ratio));
         height: calc(496px * var(--ratio));
-        font-size: calc(14px * var(--ratio));
+        font-size: calc(24px * var(--ratio));
         margin: auto;
         p
         {
@@ -569,7 +593,7 @@ main {position: relative;}
         overflow-y: scroll;
         width: calc(450px * var(--ratio));
         height: calc(496px * var(--ratio));
-        font-size: calc(14px * var(--ratio));
+        font-size: calc(24px * var(--ratio));
         margin: auto;
 
         p
@@ -610,7 +634,7 @@ main {position: relative;}
         overflow-y: scroll;
         width: calc(450px * var(--ratio));
         height: calc(496px * var(--ratio));
-        font-size: calc(14px * var(--ratio));
+        font-size: calc(24px * var(--ratio));
         margin: auto;
 
         p
