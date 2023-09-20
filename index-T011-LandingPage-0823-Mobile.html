@@ -33,6 +33,29 @@
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal -->
 
+          <!----Popup Chưa có Link button sticky-->
+    <div class="modal fade modal-dksom" id="chuacolink" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+            <div class="content-dksom">
+              <h4 class="pt-5 mt-5">
+                Game sẽ ra mắt vào 10h ngày 07/10/2023.
+                <br>
+                Hẹn gặp đại hiệp trong thế giới Kiếm Hiệp 4.0
+              </h4>
+              <a class="btn btn-dangky"  data-bs-dismiss="modal" aria-label="Close">
+                <span class="textsub">Quay lại</span>
+                <img src="images/Floatbar/Float-Bar-Popup-Btn-Back.png" alt="">
+              </a>
+            </div>   
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
           <!---Char Anh Hùng Yến-->
     <div class="modal fade modal-popup" id="anhhungyen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-xl  modal-dialog-centered" style="transform: translateY(-50%); top: 48%;">
@@ -412,12 +435,12 @@
         </ul>
         <ul class="downloadbar">
           <li>
-            <a href="#" class="appstore">
+            <a href="#" class="appstore" data-bs-toggle="modal" data-bs-target="#chuacolink">
               <img src="images/page3/Page-3-Btn-AppStore.png" alt="" class="appstore">
             </a>
           </li>
           <li>
-            <a href="#" class="googleplay">
+            <a href="#" class="googleplay" data-bs-toggle="modal" data-bs-target="#chuacolink">
               <img src="images/page3/Page-3-Btn-GooglePlay.png" alt=""  class="googleplay">
             </a>
           </li>

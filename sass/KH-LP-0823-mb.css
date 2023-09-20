@@ -466,71 +466,82 @@ main {
   display: block;
 }
 
-.modal-dksom .modal-dialog {
-  max-width: 728px;
-  width: calc(728px * var(--ratio));
-  height: calc(689px * var(--ratio));
-}
-.modal-dksom .modal-dialog .modal-content {
-  background: url(../images/New/Page-4-Popup-DangKySom.png) no-repeat top center;
-  background-size: contain;
-  width: calc(728px * var(--ratio));
-  height: calc(689px * var(--ratio));
-}
-.modal-dksom .modal-dialog .modal-content .btn-primary {
-  background-color: transparent;
+.modal-dksom .modal-content {
+  background: url(../images/Floatbar/Float-Bar-Popup-BG.png) no-repeat top center;
   border: none;
-  width: calc(356px * var(--ratio));
-  height: calc(130px * var(--ratio));
-  box-shadow: none;
-}
-.modal-dksom .modal-dialog .modal-content .col-submit {
+  height: 471px;
+  width: 1200px;
+  margin: 0 auto;
   position: relative;
-  top: 8%;
-  right: 35%;
 }
-.modal-dksom .modal-dialog .modal-content .close {
-  background: url(../images/New/Page-4-btn-Close.png) no-repeat top center;
-  background-size: contain;
-  width: calc(56px * var(--ratio));
-  height: calc(53px * var(--ratio));
-  top: calc(50px * var(--ratio));
-  right: calc(60px * var(--ratio));
-}
-.modal-dksom .modal-dialog .modal-content .container {
-  margin: 0;
-  padding: 0;
-  margin-left: calc(304px * var(--ratio));
-  margin-top: calc(199px * var(--ratio));
-  width: calc(340px * var(--ratio));
-  height: calc(420px * var(--ratio));
-}
-.modal-dksom .modal-dialog .modal-content .row {
-  margin: 0;
-  height: calc(60px * var(--ratio));
-  margin-bottom: calc(20px * var(--ratio));
-}
-.modal-dksom .modal-dialog .modal-content .row .col-auto {
-  padding: 0;
-  width: 100%;
-}
-.modal-dksom .modal-dialog .modal-content .row input {
-  padding: 0;
-  margin-top: calc(13px * var(--ratio));
-  height: 100%;
-  width: 100%;
-  font-size: calc(37px * var(--ratio));
+.modal-dksom .modal-content .modal-body .close {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  width: 85px;
+  height: 85px;
+  background: url(../images/Floatbar/Float-Bar-Popup-Btn-Close.png) no-repeat top center;
   border: none;
+}
+.modal-dksom .modal-content .modal-body .content-dksom {
+  text-align: center;
+}
+.modal-dksom .modal-content .modal-body .content-dksom h4 {
+  font-size: 30px;
+  color: #101a66;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.modal-dksom .modal-content .modal-body .content-dksom h6 {
+  color: #101a66;
+  font-size: 22px;
+}
+.modal-dksom .modal-content .modal-body .content-dksom input {
+  border: 2px solid #101a66;
+  color: #101a66;
   background: transparent;
+  width: 80%;
+  margin: 0 auto;
+  height: 61px;
+  border-radius: 10px;
 }
-.modal-dksom .modal-dialog .modal-content .row-name {
-  padding-left: calc(15px * var(--ratio));
+.modal-dksom .modal-content .modal-body .content-dksom p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #101a66;
 }
-.modal-dksom .modal-dialog .modal-content .row-phone {
-  margin-left: calc(-70px * var(--ratio));
+.modal-dksom .modal-content .modal-body .content-dksom table {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #101a66;
 }
-.modal-dksom .modal-dialog .modal-content .row-email {
-  margin-left: calc(-52px * var(--ratio));
+.modal-dksom .modal-content .modal-body .content-dksom .btn {
+  margin: 0 auto;
+  background: #101a66;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 0.5rem;
+  position: relative;
+}
+.modal-dksom .modal-content .modal-body .content-dksom .btn span.textsub {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 1px 1px 2px #cc2717, 0px 0px 6px #81170d;
+  text-transform: uppercase;
+}
+.modal-dksom .modal-content .modal-body .content-dksom .btn-dangky {
+  background: transparent;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.modal-dksom .modal-content .modal-body .content-dksom .btn-dangky:hover {
+  filter: brightness(120%);
 }
 
 .modal-thele .modal-dialog {
